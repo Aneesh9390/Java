@@ -51,6 +51,35 @@ interface itself)
 ### Dtatic Interface methods
 + Java interface static methods are part of interface, we can't use it for implementation class objects.
 + Java interface static methods helps us in providing security by not allowing implementation classes to override (@override) them.
-+ Java, C++, Javascript are called the funtional programming language because we can write functions and use them when required.
 
-### J
+### Java Functional Interfaces
++ Java, C++, Javascript are called the funtional programming language because we can write functions and use them when required.
+```java
+Runnable r = new Runnable(){
+			@Override
+			public void run() {
+				System.out.println("My Runnable");
+			}};
+``` 
++ If you look at the above code, the actual part that is of use is the code inside run() method. Rest all of the code is because of the way java programs are structured. Java 8 Functional Interfaces and Lambda Expressions help us in writing smaller and cleaner code by removing a lot of boiler-plate code.
++ An interface with exactly one abstract method is called Functional Interface.
+> @FunctionalInterface
+
+annotation is added so that we can mark an interface as functional interface.
+
+### Java Lambda Expressions
++ Objects are the base of java programming language and we can never have a function without an Object, that’s why Java language provide support for using lambda expressions only with functional interfaces.
++ Lambda Expressions syntax is (argument) -> (body).
++ Now let’s see how we can write above anonymous Runnable using lambda expression.
+```java
+Runnable r1 = () -> System.out.println("My Runnable");
+```
++ what is happening in the lambda expression above :
+	+ Runnable is a functional interface, that’s why we can use lambda expression to create it’s instance.
+	+ Since run() method takes no argument, our lambda expression also have no argument.
+	+ Just like if-else blocks, we can avoid curly braces ({}) since we have a single statement in the method body. For multiple statements, we would have to use curly braces like any other methods.
++ Why do we need Lambda Expression :
+	1. Reduced Lines of Code
+ 	2. Sequential and Parallel Execution Support
+  	3. Passing Behaviors into methods
+  	4. Higher Efficiency with Laziness
