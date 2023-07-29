@@ -1,3 +1,5 @@
+> ref site : https://www.digitalocean.com/community/tutorials/core-java-interview-questions-and-answers
+
 ## Important features of Java 8
 ### Default Interface methods
 + We use "**default method**" in interfaces for extending interfaces (which enables not to write in the classes which implemented it as we will define statements it does too in
