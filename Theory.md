@@ -50,7 +50,7 @@ interface itself)
   + Object is the base class for all the java classes.
 + Java interface default methods are also reffered to as **Defender Methods** or **Virtual Extension Methods**
 
-### Dtatic Interface methods
+### Static Interface methods
 + Java interface static methods are part of interface, we can't use it for implementation class objects.
 + Java interface static methods helps us in providing security by not allowing implementation classes to override (@override) them.
 
