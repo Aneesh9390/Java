@@ -85,3 +85,5 @@ Runnable r1 = () -> System.out.println("My Runnable");
  	2. Sequential and Parallel Execution Support
   	3. Passing Behaviors into methods
   	4. Higher Efficiency with Laziness
+### OOPS Concepts:
+- [link](https://www.digitalocean.com/community/tutorials/oops-concepts-java-example)
